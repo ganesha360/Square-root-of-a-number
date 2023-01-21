@@ -21,6 +21,14 @@ Program to find the square root for the given number(newton's method) using func
 Developed by: Ganesh R
 RegisterNumber:  22009090
 */
+def newton_method(num,num_iters =100):
+    a=float(num)
+    for i in range(num_iters):
+      num = 0.5*(num+a/num)
+    return num
+
+a=int(input())
+print("Square root of the number:",newton_method(a))
 ```
 
 ## Output:
